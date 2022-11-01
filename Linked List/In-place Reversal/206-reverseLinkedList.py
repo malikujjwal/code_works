@@ -10,7 +10,7 @@ class Node:
             temp = temp.next
         print()
     
-def reverLinkedList(head):
+def reverseLinkedList(head):
     previous, current, next = None, head, None
 
     while current is not None:
@@ -28,7 +28,7 @@ def main():
     head.next.next.next.next = Node(10)
 
     head.printList()
-    head = reverLinkedList(head)
+    head = reverseLinkedList(head)
     head.printList()
 
 main()
